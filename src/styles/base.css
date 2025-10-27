@@ -1,0 +1,138 @@
+/**
+ * Joko-UI Base Styles
+ * Global styles and resets for the design system
+ */
+
+/* Import design tokens */
+@import './tokens.css';
+
+/* ========================================
+ * CSS RESET & BASE STYLES
+ * ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--joko-font-sans);
+  font-size: var(--joko-text-base);
+  font-weight: var(--joko-font-normal);
+  line-height: var(--joko-leading-normal);
+  color: var(--joko-neutral-900);
+  background-color: var(--joko-white);
+}
+
+/* ========================================
+ * TYPOGRAPHY BASE
+ * ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--joko-font-heading);
+  font-weight: var(--joko-font-semibold);
+  line-height: var(--joko-leading-tight);
+  color: var(--joko-neutral-900);
+}
+
+h1 {
+  font-size: var(--joko-text-4xl);
+}
+
+h2 {
+  font-size: var(--joko-text-3xl);
+}
+
+h3 {
+  font-size: var(--joko-text-2xl);
+}
+
+h4 {
+  font-size: var(--joko-text-xl);
+}
+
+h5 {
+  font-size: var(--joko-text-lg);
+}
+
+h6 {
+  font-size: var(--joko-text-base);
+}
+
+p {
+  margin-bottom: var(--joko-space-4);
+}
+
+a {
+  color: var(--joko-blue-600);
+  text-decoration: none;
+  transition: color var(--joko-transition-base) var(--joko-ease-out);
+}
+
+a:hover {
+  color: var(--joko-blue-700);
+  text-decoration: underline;
+}
+
+/* ========================================
+ * FOCUS STYLES
+ * ======================================== */
+
+:focus-visible {
+  outline: 2px solid var(--joko-blue-500);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * BUTTON RESET
+ * ======================================== */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* ========================================
+ * UTILITY CLASSES
+ * ======================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

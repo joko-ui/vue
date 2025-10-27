@@ -1,0 +1,58 @@
+# Source files
+src/
+*.vue
+*.ts
+!*.d.ts
+
+# Documentation
+docs/
+DESIGN.md
+TOKENS.md
+COMPONENTS.md
+
+# Storybook
+.storybook/
+storybook-static/
+*.stories.ts
+
+# Build configuration
+vite.config.ts
+tsconfig.json
+tsconfig.*.json
+env.d.ts
+
+# Development files
+.vscode/
+.idea/
+*.log
+*.local
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Package manager
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+bun.lockb
+
+# Linting and formatting
+.eslintrc.cjs
+.prettierrc
+.prettierignore
+eslint.config.js
+
+# Testing
+*.spec.ts
+*.test.ts
+__tests__/
+coverage/
+
+# Misc
+.DS_Store
+*.swp
+*.swo
+*~

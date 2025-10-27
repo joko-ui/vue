@@ -1,0 +1,272 @@
+/**
+ * Joko-UI Design Tokens
+ * Design system inspired by Joko Widodo's leadership and Indonesian identity
+ */
+
+:root {
+  /* ========================================
+   * COLORS - Merah Jokowi (Primary Red)
+   * ======================================== */
+  --joko-red-50: #fef2f2;
+  --joko-red-100: #fee2e2;
+  --joko-red-200: #fecaca;
+  --joko-red-300: #fca5a5;
+  --joko-red-400: #f87171;
+  --joko-red-500: #ef4444;
+  --joko-red-600: #dc2626; /* Primary brand color */
+  --joko-red-700: #b91c1c;
+  --joko-red-800: #991b1b;
+  --joko-red-900: #7f1d1d;
+  --joko-red-950: #450a0a;
+
+  /* ========================================
+   * COLORS - Biru Pembangunan (Secondary Blue)
+   * ======================================== */
+  --joko-blue-50: #eff6ff;
+  --joko-blue-100: #dbeafe;
+  --joko-blue-200: #bfdbfe;
+  --joko-blue-300: #93c5fd;
+  --joko-blue-400: #60a5fa;
+  --joko-blue-500: #3b82f6;
+  --joko-blue-600: #2563eb; /* Secondary brand color */
+  --joko-blue-700: #1d4ed8;
+  --joko-blue-800: #1e40af;
+  --joko-blue-900: #1e3a8a;
+  --joko-blue-950: #172554;
+
+  /* ========================================
+   * COLORS - Neutrals
+   * ======================================== */
+  --joko-white: #ffffff;
+  --joko-white-soft: #fafafa;
+  --joko-neutral-50: #fafafa;
+  --joko-neutral-100: #f5f5f5;
+  --joko-neutral-200: #e5e5e5;
+  --joko-neutral-300: #d4d4d4;
+  --joko-neutral-400: #a3a3a3;
+  --joko-neutral-500: #737373;
+  --joko-neutral-600: #525252;
+  --joko-neutral-700: #404040;
+  --joko-neutral-800: #262626;
+  --joko-neutral-900: #171717;
+  --joko-neutral-950: #0a0a0a;
+
+  /* ========================================
+   * COLORS - Semantic (Success)
+   * ======================================== */
+  --joko-success-50: #f0fdf4;
+  --joko-success-100: #dcfce7;
+  --joko-success-200: #bbf7d0;
+  --joko-success-300: #86efac;
+  --joko-success-400: #4ade80;
+  --joko-success-500: #22c55e;
+  --joko-success-600: #16a34a;
+  --joko-success-700: #15803d;
+  --joko-success-800: #166534;
+  --joko-success-900: #14532d;
+
+  /* ========================================
+   * COLORS - Semantic (Warning)
+   * ======================================== */
+  --joko-warning-50: #fefce8;
+  --joko-warning-100: #fef9c3;
+  --joko-warning-200: #fef08a;
+  --joko-warning-300: #fde047;
+  --joko-warning-400: #facc15;
+  --joko-warning-500: #eab308;
+  --joko-warning-600: #ca8a04;
+  --joko-warning-700: #a16207;
+  --joko-warning-800: #854d0e;
+  --joko-warning-900: #713f12;
+
+  /* ========================================
+   * COLORS - Semantic (Error)
+   * ======================================== */
+  --joko-error-50: #fef2f2;
+  --joko-error-100: #fee2e2;
+  --joko-error-200: #fecaca;
+  --joko-error-300: #fca5a5;
+  --joko-error-400: #f87171;
+  --joko-error-500: #ef4444;
+  --joko-error-600: #dc2626;
+  --joko-error-700: #b91c1c;
+  --joko-error-800: #991b1b;
+  --joko-error-900: #7f1d1d;
+
+  /* ========================================
+   * COLORS - Semantic (Info)
+   * ======================================== */
+  --joko-info-50: #f0f9ff;
+  --joko-info-100: #e0f2fe;
+  --joko-info-200: #bae6fd;
+  --joko-info-300: #7dd3fc;
+  --joko-info-400: #38bdf8;
+  --joko-info-500: #0ea5e9;
+  --joko-info-600: #0284c7;
+  --joko-info-700: #0369a1;
+  --joko-info-800: #075985;
+  --joko-info-900: #0c4a6e;
+
+  /* ========================================
+   * TYPOGRAPHY - Font Families
+   * ======================================== */
+  --joko-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --joko-font-heading: 'Poppins', 'Inter', sans-serif;
+  --joko-font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* ========================================
+   * TYPOGRAPHY - Font Sizes
+   * ======================================== */
+  --joko-text-xs: 0.75rem; /* 12px */
+  --joko-text-sm: 0.875rem; /* 14px */
+  --joko-text-base: 1rem; /* 16px */
+  --joko-text-lg: 1.125rem; /* 18px */
+  --joko-text-xl: 1.25rem; /* 20px */
+  --joko-text-2xl: 1.5rem; /* 24px */
+  --joko-text-3xl: 1.875rem; /* 30px */
+  --joko-text-4xl: 2.25rem; /* 36px */
+  --joko-text-5xl: 3rem; /* 48px */
+  --joko-text-6xl: 3.75rem; /* 60px */
+
+  /* ========================================
+   * TYPOGRAPHY - Font Weights
+   * ======================================== */
+  --joko-font-light: 300;
+  --joko-font-normal: 400;
+  --joko-font-medium: 500;
+  --joko-font-semibold: 600;
+  --joko-font-bold: 700;
+  --joko-font-extrabold: 800;
+
+  /* ========================================
+   * TYPOGRAPHY - Line Heights
+   * ======================================== */
+  --joko-leading-none: 1;
+  --joko-leading-tight: 1.25;
+  --joko-leading-snug: 1.375;
+  --joko-leading-normal: 1.5;
+  --joko-leading-relaxed: 1.625;
+  --joko-leading-loose: 2;
+
+  /* ========================================
+   * SPACING - Base 8px unit system
+   * ======================================== */
+  --joko-space-0: 0;
+  --joko-space-1: 0.25rem; /* 4px */
+  --joko-space-2: 0.5rem; /* 8px - base unit */
+  --joko-space-3: 0.75rem; /* 12px */
+  --joko-space-4: 1rem; /* 16px */
+  --joko-space-5: 1.25rem; /* 20px */
+  --joko-space-6: 1.5rem; /* 24px */
+  --joko-space-8: 2rem; /* 32px */
+  --joko-space-10: 2.5rem; /* 40px */
+  --joko-space-12: 3rem; /* 48px */
+  --joko-space-16: 4rem; /* 64px */
+  --joko-space-20: 5rem; /* 80px */
+  --joko-space-24: 6rem; /* 96px */
+  --joko-space-32: 8rem; /* 128px */
+
+  /* ========================================
+   * BORDER RADIUS
+   * ======================================== */
+  --joko-rounded-none: 0;
+  --joko-rounded-sm: 0.125rem; /* 2px */
+  --joko-rounded: 0.25rem; /* 4px */
+  --joko-rounded-md: 0.375rem; /* 6px */
+  --joko-rounded-lg: 0.5rem; /* 8px */
+  --joko-rounded-xl: 0.75rem; /* 12px */
+  --joko-rounded-2xl: 1rem; /* 16px */
+  --joko-rounded-3xl: 1.5rem; /* 24px */
+  --joko-rounded-full: 9999px;
+
+  /* ========================================
+   * SHADOWS
+   * ======================================== */
+  --joko-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --joko-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --joko-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --joko-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --joko-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --joko-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --joko-shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --joko-shadow-none: none;
+
+  /* ========================================
+   * Z-INDEX
+   * ======================================== */
+  --joko-z-0: 0;
+  --joko-z-10: 10;
+  --joko-z-20: 20;
+  --joko-z-30: 30;
+  --joko-z-40: 40;
+  --joko-z-50: 50;
+  --joko-z-60: 60;
+  --joko-z-70: 70;
+  --joko-z-80: 80;
+  --joko-z-90: 90;
+  --joko-z-100: 100;
+
+  /* ========================================
+   * TRANSITIONS
+   * ======================================== */
+  --joko-transition-fast: 100ms;
+  --joko-transition-base: 150ms;
+  --joko-transition-normal: 200ms;
+  --joko-transition-slow: 300ms;
+  --joko-transition-slower: 500ms;
+
+  /* ========================================
+   * TRANSITION TIMING FUNCTIONS
+   * ======================================== */
+  --joko-ease-linear: linear;
+  --joko-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --joko-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --joko-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========================================
+   * BREAKPOINTS (for reference)
+   * ======================================== */
+  --joko-screen-sm: 640px;
+  --joko-screen-md: 768px;
+  --joko-screen-lg: 1024px;
+  --joko-screen-xl: 1280px;
+  --joko-screen-2xl: 1536px;
+
+  /* ========================================
+   * CONTAINER WIDTHS
+   * ======================================== */
+  --joko-container-sm: 640px;
+  --joko-container-md: 768px;
+  --joko-container-lg: 1024px;
+  --joko-container-xl: 1280px;
+  --joko-container-2xl: 1536px;
+
+  /* ========================================
+   * ICON SIZES
+   * ======================================== */
+  --joko-icon-xs: 12px;
+  --joko-icon-sm: 16px;
+  --joko-icon-md: 20px;
+  --joko-icon-lg: 24px;
+  --joko-icon-xl: 32px;
+  --joko-icon-2xl: 48px;
+
+  /* ========================================
+   * OPACITY
+   * ======================================== */
+  --joko-opacity-0: 0;
+  --joko-opacity-10: 0.1;
+  --joko-opacity-20: 0.2;
+  --joko-opacity-30: 0.3;
+  --joko-opacity-40: 0.4;
+  --joko-opacity-50: 0.5;
+  --joko-opacity-60: 0.6;
+  --joko-opacity-70: 0.7;
+  --joko-opacity-80: 0.8;
+  --joko-opacity-90: 0.9;
+  --joko-opacity-100: 1;
+}

@@ -1,0 +1,341 @@
+/**
+ * Joko-UI VitePress Theme Customization
+ * Applies Jokowi-inspired design system to VitePress
+ */
+
+/**
+ * Colors
+ * Override VitePress theme colors with Joko-UI palette
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Brand Colors - Jokowi Red */
+  --vp-c-brand-1: var(--joko-red-600);
+  --vp-c-brand-2: var(--joko-red-700);
+  --vp-c-brand-3: var(--joko-red-800);
+  --vp-c-brand-soft: var(--joko-red-50);
+
+  /* Accent - Development Blue */
+  --vp-c-indigo-1: var(--joko-blue-600);
+  --vp-c-indigo-2: var(--joko-blue-700);
+  --vp-c-indigo-3: var(--joko-blue-800);
+  --vp-c-indigo-soft: var(--joko-blue-50);
+
+  /* Text */
+  --vp-c-text-1: var(--joko-neutral-900);
+  --vp-c-text-2: var(--joko-neutral-700);
+  --vp-c-text-3: var(--joko-neutral-600);
+
+  /* Background */
+  --vp-c-bg: var(--joko-white);
+  --vp-c-bg-soft: var(--joko-neutral-50);
+  --vp-c-bg-mute: var(--joko-neutral-100);
+  --vp-c-bg-alt: var(--joko-neutral-100);
+
+  /* Borders */
+  --vp-c-border: var(--joko-neutral-200);
+  --vp-c-divider: var(--joko-neutral-200);
+  --vp-c-gutter: var(--joko-neutral-200);
+
+  /* Component specific */
+  --vp-button-brand-bg: var(--joko-red-600);
+  --vp-button-brand-hover-bg: var(--joko-red-700);
+  --vp-button-brand-active-bg: var(--joko-red-800);
+
+  /* Home page hero */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    var(--joko-red-600) 30%,
+    var(--joko-blue-600)
+  );
+}
+
+/* Dark mode (optional, keeping presidential aesthetic) */
+.dark {
+  --vp-c-bg: var(--joko-neutral-900);
+  --vp-c-bg-soft: var(--joko-neutral-800);
+  --vp-c-bg-mute: var(--joko-neutral-700);
+  --vp-c-text-1: var(--joko-white);
+  --vp-c-text-2: var(--joko-neutral-300);
+  --vp-c-text-3: var(--joko-neutral-400);
+}
+
+/**
+ * Typography
+ * Apply Joko-UI font system
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-font-family-base: var(--joko-font-sans);
+  --vp-font-family-mono: var(--joko-font-mono);
+}
+
+/* Headings use Poppins */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+.VPHero .name {
+  font-family: var(--joko-font-heading);
+  font-weight: var(--joko-font-semibold);
+}
+
+/**
+ * Component Overrides
+ * -------------------------------------------------------------------------- */
+
+/* Home hero section - Presidential styling */
+.VPHero {
+  padding-top: var(--joko-space-24) !important;
+  padding-bottom: var(--joko-space-24) !important;
+}
+
+.VPHero .name {
+  font-size: 4rem !important;
+  font-weight: var(--joko-font-bold) !important;
+  line-height: var(--joko-leading-tight) !important;
+}
+
+.VPHero .tagline {
+  font-size: var(--joko-text-2xl) !important;
+  font-weight: var(--joko-font-normal) !important;
+  opacity: 0.8;
+}
+
+/* Navigation bar */
+.VPNav {
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+/* Buttons */
+.VPButton.brand {
+  background-color: var(--joko-red-600);
+  border-color: var(--joko-red-600);
+  transition: all var(--joko-transition-base) var(--joko-ease-out);
+}
+
+.VPButton.brand:hover {
+  background-color: var(--joko-red-700);
+  border-color: var(--joko-red-700);
+  transform: scale(1.02);
+}
+
+.VPButton.alt {
+  background-color: transparent;
+  border-color: var(--joko-neutral-300);
+  color: var(--joko-neutral-900);
+}
+
+.VPButton.alt:hover {
+  background-color: var(--joko-neutral-100);
+  border-color: var(--joko-neutral-400);
+}
+
+/* Feature cards */
+.VPFeature {
+  border: 1px solid var(--joko-neutral-200);
+  border-radius: var(--joko-rounded-xl);
+  transition: all var(--joko-transition-normal) var(--joko-ease-out);
+}
+
+.VPFeature:hover {
+  border-color: var(--joko-red-600);
+  box-shadow: var(--joko-shadow-lg);
+  transform: translateY(-2px);
+}
+
+.VPFeature .icon {
+  color: var(--joko-red-600);
+}
+
+/* Sidebar */
+.VPSidebar {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.VPSidebarItem.is-active > .item > .link {
+  color: var(--joko-red-600);
+  font-weight: var(--joko-font-semibold);
+}
+
+/* Code blocks */
+.vp-code-group .tabs {
+  background-color: var(--joko-neutral-100);
+}
+
+div[class*='language-'] {
+  border-radius: var(--joko-rounded-lg);
+  border: 1px solid var(--joko-neutral-200);
+}
+
+/* Links */
+.vp-doc a {
+  color: var(--joko-blue-600);
+  text-decoration: none;
+  transition: color var(--joko-transition-base);
+}
+
+.vp-doc a:hover {
+  color: var(--joko-blue-700);
+  text-decoration: underline;
+}
+
+/**
+ * Custom Components
+ * -------------------------------------------------------------------------- */
+
+/* Demo container for live component previews */
+.demo-container {
+  padding: var(--joko-space-8);
+  background-color: var(--joko-neutral-50);
+  border: 1px solid var(--joko-neutral-200);
+  border-radius: var(--joko-rounded-xl);
+  margin: var(--joko-space-8) 0;
+}
+
+.demo-preview {
+  padding: var(--joko-space-6);
+  background-color: var(--joko-white);
+  border-radius: var(--joko-rounded-lg);
+  margin-bottom: var(--joko-space-4);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--joko-space-4);
+}
+
+.demo-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--joko-space-4);
+  padding: var(--joko-space-4);
+  background-color: var(--joko-white);
+  border-radius: var(--joko-rounded-lg);
+}
+
+/* Color palette showcase */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--joko-space-4);
+  margin: var(--joko-space-8) 0;
+}
+
+.color-swatch {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--joko-rounded-lg);
+  overflow: hidden;
+  border: 1px solid var(--joko-neutral-200);
+}
+
+.color-swatch-color {
+  height: 80px;
+}
+
+.color-swatch-info {
+  padding: var(--joko-space-3);
+  background-color: var(--joko-white);
+}
+
+.color-swatch-name {
+  font-size: var(--joko-text-sm);
+  font-weight: var(--joko-font-semibold);
+  color: var(--joko-neutral-900);
+}
+
+.color-swatch-value {
+  font-size: var(--joko-text-xs);
+  color: var(--joko-neutral-600);
+  font-family: var(--joko-font-mono);
+}
+
+/* Feature grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--joko-space-6);
+  margin: var(--joko-space-12) 0;
+}
+
+.feature-card {
+  padding: var(--joko-space-6);
+  background-color: var(--joko-white);
+  border: 1px solid var(--joko-neutral-200);
+  border-radius: var(--joko-rounded-xl);
+  transition: all var(--joko-transition-normal) var(--joko-ease-out);
+}
+
+.feature-card:hover {
+  border-color: var(--joko-red-600);
+  box-shadow: var(--joko-shadow-lg);
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--joko-red-600), var(--joko-blue-600));
+  border-radius: var(--joko-rounded-xl);
+  color: white;
+  font-size: var(--joko-text-2xl);
+  font-weight: var(--joko-font-bold);
+  margin-bottom: var(--joko-space-4);
+}
+
+.feature-title {
+  font-size: var(--joko-text-xl);
+  font-weight: var(--joko-font-semibold);
+  font-family: var(--joko-font-heading);
+  color: var(--joko-neutral-900);
+  margin-bottom: var(--joko-space-2);
+}
+
+.feature-description {
+  font-size: var(--joko-text-sm);
+  color: var(--joko-neutral-600);
+  line-height: var(--joko-leading-relaxed);
+}
+
+/* Philosophy section */
+.philosophy-quote {
+  font-size: var(--joko-text-2xl);
+  font-style: italic;
+  color: var(--joko-red-600);
+  text-align: center;
+  margin: var(--joko-space-12) 0;
+  padding: var(--joko-space-8);
+  border-left: 4px solid var(--joko-red-600);
+  background-color: var(--joko-red-50);
+  border-radius: var(--joko-rounded-lg);
+}
+
+/**
+ * Responsive adjustments
+ * -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 2.5rem !important;
+  }
+
+  .VPHero .tagline {
+    font-size: var(--joko-text-lg) !important;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .color-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
