@@ -269,4 +269,163 @@
   --joko-opacity-80: 0.8;
   --joko-opacity-90: 0.9;
   --joko-opacity-100: 1;
+
+  /* ========================================
+   * SEMANTIC TOKENS - Backgrounds
+   * Auto-adapt to light/dark mode
+   * ======================================== */
+  --joko-bg-primary: var(--joko-white);
+  --joko-bg-secondary: var(--joko-neutral-50);
+  --joko-bg-tertiary: var(--joko-neutral-100);
+  --joko-bg-inverse: var(--joko-neutral-900);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Text
+   * Auto-adapt to light/dark mode
+   * ======================================== */
+  --joko-text-primary: var(--joko-neutral-900);
+  --joko-text-secondary: var(--joko-neutral-700);
+  --joko-text-tertiary: var(--joko-neutral-600);
+  --joko-text-inverse: var(--joko-white);
+  --joko-text-link: var(--joko-blue-600);
+  --joko-text-link-hover: var(--joko-blue-700);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Borders
+   * Auto-adapt to light/dark mode
+   * ======================================== */
+  --joko-border-primary: var(--joko-neutral-200);
+  --joko-border-secondary: var(--joko-neutral-300);
+  --joko-border-focus: var(--joko-blue-500);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Surfaces
+   * For elevated components (cards, modals, etc.)
+   * ======================================== */
+  --joko-surface-base: var(--joko-white);
+  --joko-surface-raised: var(--joko-white);
+  --joko-surface-overlay: var(--joko-white);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Interactive States
+   * Auto-adapt to light/dark mode
+   * ======================================== */
+  --joko-hover-bg: var(--joko-neutral-50);
+  --joko-hover-bg-subtle: var(--joko-neutral-100);
+  --joko-active-bg: var(--joko-neutral-100);
+  --joko-selected-bg: var(--joko-red-50);
+}
+
+/* ========================================
+ * DARK MODE OVERRIDES
+ * Applied when .dark class is present
+ * ======================================== */
+
+.dark {
+  /* ========================================
+   * SEMANTIC TOKENS - Backgrounds (Dark)
+   * ======================================== */
+  --joko-bg-primary: var(--joko-neutral-950);
+  --joko-bg-secondary: var(--joko-neutral-900);
+  --joko-bg-tertiary: var(--joko-neutral-800);
+  --joko-bg-inverse: var(--joko-white);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Text (Dark)
+   * ======================================== */
+  --joko-text-primary: var(--joko-white);
+  --joko-text-secondary: var(--joko-neutral-300);
+  --joko-text-tertiary: var(--joko-neutral-400);
+  --joko-text-inverse: var(--joko-neutral-900);
+  --joko-text-link: var(--joko-blue-400);
+  --joko-text-link-hover: var(--joko-blue-300);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Borders (Dark)
+   * ======================================== */
+  --joko-border-primary: var(--joko-neutral-800);
+  --joko-border-secondary: var(--joko-neutral-700);
+  --joko-border-focus: var(--joko-blue-400);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Surfaces (Dark)
+   * ======================================== */
+  --joko-surface-base: var(--joko-neutral-900);
+  --joko-surface-raised: var(--joko-neutral-800);
+  --joko-surface-overlay: var(--joko-neutral-800);
+
+  /* ========================================
+   * SEMANTIC TOKENS - Interactive States (Dark)
+   * ======================================== */
+  --joko-hover-bg: var(--joko-neutral-800);
+  --joko-hover-bg-subtle: var(--joko-neutral-900);
+  --joko-active-bg: var(--joko-neutral-700);
+  --joko-selected-bg: var(--joko-red-950);
+
+  /* ========================================
+   * COLOR SCALE ADJUSTMENTS FOR DARK MODE
+   * Override light/dark shades for better contrast
+   * ======================================== */
+
+  /* Red - Adjust light shades for dark backgrounds */
+  --joko-red-50: #450a0a;   /* Flip with 950 */
+  --joko-red-100: #7f1d1d;  /* Flip with 900 */
+  --joko-red-200: #991b1b;  /* Flip with 800 */
+  --joko-red-300: #b91c1c;  /* Flip with 700 */
+  /* 400-600 stay the same - core brand colors */
+  --joko-red-700: #fca5a5;  /* Flip with 300 */
+  --joko-red-800: #fecaca;  /* Flip with 200 */
+  --joko-red-900: #fee2e2;  /* Flip with 100 */
+  --joko-red-950: #fef2f2;  /* Flip with 50 */
+
+  /* Blue - Adjust light shades for dark backgrounds */
+  --joko-blue-50: #172554;   /* Flip with 950 */
+  --joko-blue-100: #1e3a8a;  /* Flip with 900 */
+  --joko-blue-200: #1e40af;  /* Flip with 800 */
+  --joko-blue-300: #1d4ed8;  /* Flip with 700 */
+  /* 400-600 stay the same - core brand colors */
+  --joko-blue-700: #93c5fd;  /* Flip with 300 */
+  --joko-blue-800: #bfdbfe;  /* Flip with 200 */
+  --joko-blue-900: #dbeafe;  /* Flip with 100 */
+  --joko-blue-950: #eff6ff;  /* Flip with 50 */
+
+  /* Neutrals - Complete flip for proper contrast */
+  --joko-neutral-50: #171717;   /* Flip with 900 */
+  --joko-neutral-100: #262626;  /* Flip with 800 */
+  --joko-neutral-200: #404040;  /* Flip with 700 */
+  --joko-neutral-300: #525252;  /* Flip with 600 */
+  --joko-neutral-400: #737373;  /* Stays same (middle) */
+  --joko-neutral-500: #a3a3a3;  /* Stays same (middle) */
+  --joko-neutral-600: #d4d4d4;  /* Flip with 300 */
+  --joko-neutral-700: #e5e5e5;  /* Flip with 200 */
+  --joko-neutral-800: #f5f5f5;  /* Flip with 100 */
+  --joko-neutral-900: #fafafa;  /* Flip with 50 */
+
+  /* Success - Adjust for dark mode */
+  --joko-success-50: #14532d;
+  --joko-success-100: #166534;
+  --joko-success-200: #15803d;
+  --joko-success-800: #bbf7d0;
+  --joko-success-900: #dcfce7;
+
+  /* Warning - Adjust for dark mode */
+  --joko-warning-50: #713f12;
+  --joko-warning-100: #854d0e;
+  --joko-warning-200: #a16207;
+  --joko-warning-800: #fef08a;
+  --joko-warning-900: #fef9c3;
+
+  /* Error - Adjust for dark mode */
+  --joko-error-50: #7f1d1d;
+  --joko-error-100: #991b1b;
+  --joko-error-200: #b91c1c;
+  --joko-error-800: #fecaca;
+  --joko-error-900: #fee2e2;
+
+  /* Info - Adjust for dark mode */
+  --joko-info-50: #0c4a6e;
+  --joko-info-100: #075985;
+  --joko-info-200: #0369a1;
+  --joko-info-800: #bae6fd;
+  --joko-info-900: #e0f2fe;
 }

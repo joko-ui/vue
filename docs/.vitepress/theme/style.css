@@ -51,14 +51,32 @@
   );
 }
 
-/* Dark mode (optional, keeping presidential aesthetic) */
+/* Dark mode (comprehensive dark theme support) */
 .dark {
-  --vp-c-bg: var(--joko-neutral-900);
-  --vp-c-bg-soft: var(--joko-neutral-800);
-  --vp-c-bg-mute: var(--joko-neutral-700);
+  /* Backgrounds */
+  --vp-c-bg: var(--joko-neutral-950);
+  --vp-c-bg-soft: var(--joko-neutral-900);
+  --vp-c-bg-mute: var(--joko-neutral-800);
+  --vp-c-bg-alt: var(--joko-neutral-800);
+
+  /* Text */
   --vp-c-text-1: var(--joko-white);
   --vp-c-text-2: var(--joko-neutral-300);
   --vp-c-text-3: var(--joko-neutral-400);
+
+  /* Borders */
+  --vp-c-border: var(--joko-neutral-800);
+  --vp-c-divider: var(--joko-neutral-800);
+  --vp-c-gutter: var(--joko-neutral-800);
+
+  /* Brand colors stay the same for consistency */
+  --vp-c-brand-1: var(--joko-red-500);
+  --vp-c-brand-2: var(--joko-red-600);
+  --vp-c-brand-3: var(--joko-red-700);
+  --vp-c-brand-soft: var(--joko-red-950);
+
+  /* Code blocks */
+  --vp-code-bg: var(--joko-neutral-900);
 }
 
 /**
@@ -316,6 +334,101 @@ div[class*='language-'] {
   border-left: 4px solid var(--joko-red-600);
   background-color: var(--joko-red-50);
   border-radius: var(--joko-rounded-lg);
+}
+
+/**
+ * Responsive adjustments
+ * -------------------------------------------------------------------------- */
+
+/**
+ * Dark Mode Component Overrides
+ * Fix hardcoded colors for dark theme
+ * -------------------------------------------------------------------------- */
+
+.dark .VPButton.alt {
+  color: var(--joko-text-primary);
+  border-color: var(--joko-border-primary);
+}
+
+.dark .VPButton.alt:hover {
+  background-color: var(--joko-hover-bg);
+  border-color: var(--joko-border-secondary);
+}
+
+.dark .VPFeature {
+  border-color: var(--joko-border-primary);
+  background-color: var(--joko-surface-base);
+}
+
+.dark .VPFeature:hover {
+  border-color: var(--joko-red-600);
+  background-color: var(--joko-surface-raised);
+}
+
+.dark .vp-code-group .tabs {
+  background-color: var(--joko-neutral-900);
+}
+
+.dark div[class*='language-'] {
+  border-color: var(--joko-border-primary);
+  background-color: var(--joko-neutral-900);
+}
+
+/* Demo containers */
+.dark .demo-container {
+  background-color: var(--joko-bg-secondary);
+  border-color: var(--joko-border-primary);
+}
+
+.dark .demo-preview {
+  background-color: var(--joko-surface-base);
+}
+
+.dark .demo-controls {
+  background-color: var(--joko-surface-base);
+}
+
+/* Color swatches */
+.dark .color-swatch {
+  border-color: var(--joko-border-primary);
+}
+
+.dark .color-swatch-info {
+  background-color: var(--joko-surface-base);
+}
+
+.dark .color-swatch-name {
+  color: var(--joko-text-primary);
+}
+
+.dark .color-swatch-value {
+  color: var(--joko-text-secondary);
+}
+
+/* Feature cards */
+.dark .feature-card {
+  background-color: var(--joko-surface-base);
+  border-color: var(--joko-border-primary);
+}
+
+.dark .feature-card:hover {
+  background-color: var(--joko-surface-raised);
+  border-color: var(--joko-red-600);
+}
+
+.dark .feature-title {
+  color: var(--joko-text-primary);
+}
+
+.dark .feature-description {
+  color: var(--joko-text-secondary);
+}
+
+/* Philosophy quote */
+.dark .philosophy-quote {
+  background-color: var(--joko-red-950);
+  border-left-color: var(--joko-red-600);
+  color: var(--joko-red-400);
 }
 
 /**

@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Joko-UI',
   description: 'Vue 3 UI component library inspired by Joko Widodo\'s leadership and Indonesian identity',
+  base: '/vue/',
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -48,7 +49,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yourusername/joko-ui' }
+      { icon: 'github', link: 'https://github.com/joko-ui/vue' }
     ],
 
     footer: {

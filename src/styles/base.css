@@ -29,8 +29,8 @@ body {
   font-size: var(--joko-text-base);
   font-weight: var(--joko-font-normal);
   line-height: var(--joko-leading-normal);
-  color: var(--joko-neutral-900);
-  background-color: var(--joko-white);
+  color: var(--joko-text-primary);
+  background-color: var(--joko-bg-primary);
 }
 
 /* ========================================
@@ -46,7 +46,7 @@ h6 {
   font-family: var(--joko-font-heading);
   font-weight: var(--joko-font-semibold);
   line-height: var(--joko-leading-tight);
-  color: var(--joko-neutral-900);
+  color: var(--joko-text-primary);
 }
 
 h1 {
@@ -78,13 +78,13 @@ p {
 }
 
 a {
-  color: var(--joko-blue-600);
+  color: var(--joko-text-link);
   text-decoration: none;
   transition: color var(--joko-transition-base) var(--joko-ease-out);
 }
 
 a:hover {
-  color: var(--joko-blue-700);
+  color: var(--joko-text-link-hover);
   text-decoration: underline;
 }
 
@@ -93,7 +93,7 @@ a:hover {
  * ======================================== */
 
 :focus-visible {
-  outline: 2px solid var(--joko-blue-500);
+  outline: 2px solid var(--joko-border-focus);
   outline-offset: 2px;
 }
 

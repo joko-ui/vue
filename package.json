@@ -33,15 +33,15 @@
     "joko-ui",
     "presidential"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Indra <adityain98@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/joko-ui"
+    "url": "https://github.com/joko-ui/vue"
   },
-  "homepage": "https://github.com/yourusername/joko-ui#readme",
+  "homepage": "https://github.com/joko-ui/vue#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/joko-ui/issues"
+    "url": "https://github.com/joko-ui/vue/issues"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
