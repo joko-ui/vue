@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'Joko-UI',
   description: 'Vue 3 UI component library inspired by Joko Widodo\'s leadership and Indonesian identity',
   base: '/vue/',
+  ignoreDeadLinks: true,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -14,8 +15,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Get Started', link: '/getting-started' },
       { text: 'Philosophy', link: '/philosophy' },
-      { text: 'Components', link: '/components/' },
-      { text: 'Storybook', link: 'http://localhost:6006', target: '_blank' }
+      { text: 'Components', link: '/components/' }
     ],
 
     sidebar: [
