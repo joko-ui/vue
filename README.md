@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 
-[Documentation](https://github.com/yourusername/joko-ui) • [Components](https://github.com/yourusername/joko-ui) • [Storybook](https://github.com/yourusername/joko-ui)
+[Documentation](https://joko-ui.github.io/vue/) • [Components](https://joko-ui.github.io/vue/components/) • [Design Tokens](https://joko-ui.github.io/vue/tokens)
 
 > **Pronunciation:** Joko-UI is pronounced like "Jokowi" (JO-ko, rhyming with "cocoa"), not "yo-ko" or "jah-ko".
 
@@ -135,7 +135,7 @@ Trust, stability, progress
 
 ## 📖 Documentation
 
-Visit our [documentation](https://github.com/yourusername/joko-ui) for:
+Visit our [documentation](https://joko-ui.github.io/vue/) for:
 
 - Complete component API
 - Design principles
@@ -159,7 +159,7 @@ const buttonProps: JButtonProps = {
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [contributing guidelines](https://github.com/yourusername/joko-ui/blob/main/CONTRIBUTING.md) before submitting PRs.
+Contributions are welcome! Please read our [contributing guidelines](https://github.com/joko-ui/vue/blob/main/CONTRIBUTING.md) before submitting PRs.
 
 ## 📄 License
 
