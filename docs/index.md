@@ -6,8 +6,8 @@ hero:
   text: Vue 3 Component Library
   tagline: Pronounced like "Joko-wi". Inspired by Joko Widodo's leadership and Indonesian identity. Build with purpose. Build for the people.
   image:
-    src: /hero-image.svg
-    alt: Joko-UI
+    src: /assets/hero.png
+    alt: Joko-UI Hero Illustration
   actions:
     - theme: brand
       text: Get Started

@@ -6,6 +6,7 @@ export default defineConfig({
   description: 'Vue 3 UI component library inspired by Joko Widodo\'s leadership and Indonesian identity',
   base: '/vue/',
   ignoreDeadLinks: true,
+  appearance: false,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
