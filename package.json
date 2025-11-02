@@ -1,6 +1,6 @@
 {
   "name": "@joko-ui/vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue 3 UI component library inspired by Joko Widodo's leadership and Indonesian identity",
   "private": false,
   "type": "module",
