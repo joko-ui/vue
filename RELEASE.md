@@ -74,15 +74,21 @@ The following files were added to enable this:
 
 ### "Release already exists" Error
 
-If you get an error like "Validation Failed: {"resource":"Release","code":"already_exists","field":"tag_name"}", it means:
+The release workflow now automatically checks if a release already exists before attempting to create one. If you get an error like "Validation Failed: {"resource":"Release","code":"already_exists","field":"tag_name"}", it means:
 
 1. The tag already exists in your repository
 2. A release with that tag already exists
 
-To fix this:
+The workflow will now:
+
+- Check if the release exists before trying to create it
+- Skip the release creation step if it already exists
+- Still publish to npm regardless
+
+If you need to recreate an existing release:
 
 1. Check existing tags: `git tag -l`
-2. If the tag exists but you want to recreate it:
+2. Delete the existing tag and release:
    ```bash
    git tag -d v1.0.1  # Delete local tag
    git push origin :refs/tags/v1.0.1  # Delete remote tag
@@ -92,5 +98,3 @@ To fix this:
    npm version patch  # This will create v1.0.2
    git push origin main --follow-tags
    ```
-
-The workflow now has `continue-on-error: true` for the release creation step, so it will still publish to npm even if the GitHub release fails.
