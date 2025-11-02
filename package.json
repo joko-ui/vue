@@ -1,6 +1,6 @@
 {
   "name": "@joko-ui/vue",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vue 3 UI component library inspired by Joko Widodo's leadership and Indonesian identity",
   "private": false,
   "type": "module",
@@ -42,6 +42,9 @@
   "homepage": "https://github.com/joko-ui/vue#readme",
   "bugs": {
     "url": "https://github.com/joko-ui/vue/issues"
+  },
+  "publishConfig": {
+    "@joko-ui:registry": "https://npm.pkg.github.com"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
