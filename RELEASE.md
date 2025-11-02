@@ -69,3 +69,28 @@ The following files were added to enable this:
 - `.github/FUNDING.yml` - Funding information
 - `.github/ISSUE_TEMPLATE/` - Issue templates for bug reports and feature requests
 - `.github/workflows/release.yml` - Automated release workflow
+
+## Troubleshooting
+
+### "Release already exists" Error
+
+If you get an error like "Validation Failed: {"resource":"Release","code":"already_exists","field":"tag_name"}", it means:
+
+1. The tag already exists in your repository
+2. A release with that tag already exists
+
+To fix this:
+
+1. Check existing tags: `git tag -l`
+2. If the tag exists but you want to recreate it:
+   ```bash
+   git tag -d v1.0.1  # Delete local tag
+   git push origin :refs/tags/v1.0.1  # Delete remote tag
+   ```
+3. Create a new version instead:
+   ```bash
+   npm version patch  # This will create v1.0.2
+   git push origin main --follow-tags
+   ```
+
+The workflow now has `continue-on-error: true` for the release creation step, so it will still publish to npm even if the GitHub release fails.

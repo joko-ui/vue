@@ -48,5 +48,9 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
+          body: |
+            Changes in this release:
+            - Automated release from tag ${{ github.ref }}
           draft: false
           prerelease: false
+        continue-on-error: true
