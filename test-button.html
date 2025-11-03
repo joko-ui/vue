@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JButton Styling Test</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>JButton Styling Test</h1>
+        <p>This tests if the JButton styling appears correctly after the fix.</p>
+        
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem 0;">
+            <j-button variant="primary">Primary Button</j-button>
+            <j-button variant="secondary">Secondary Button</j-button>
+            <j-button variant="outline">Outline Button</j-button>
+            <j-button variant="ghost">Ghost Button</j-button>
+            <j-button variant="link">Link Button</j-button>
+        </div>
+        
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem 0;">
+            <j-button size="xs">Extra Small</j-button>
+            <j-button size="sm">Small</j-button>
+            <j-button size="md">Medium</j-button>
+            <j-button size="lg">Large</j-button>
+            <j-button size="xl">Extra Large</j-button>
+        </div>
+        
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem 0;">
+            <j-button variant="primary" :disabled="true">Disabled</j-button>
+            <j-button variant="secondary" :loading="true">Loading</j-button>
+            <j-button variant="outline" full-width>Full Width</j-button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { JButton } from './dist/joko-ui.js';
+        
+        const { createApp } = Vue;
+        
+        createApp({
+            components: {
+                JButton
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
